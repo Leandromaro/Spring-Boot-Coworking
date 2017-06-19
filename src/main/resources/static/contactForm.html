@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+    <html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Getting Started: Serving Web Content</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="css/contactForm.css" type="text/css" rel="stylesheet">
+    </head>
+<body>
+<div class="container">
+    <form id="contact" action="/greeting" method="get">
+        <h3>Contact Form</h3>
+        <fieldset>
+            <input placeholder="Your name" type="text" name="name" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+            <input placeholder="Your last name" type="text" name="lname" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+            <input placeholder="Your Email Address" type="email" tabindex="3" required>
+        </fieldset>
+        <fieldset>
+            <input placeholder="Your Identity Card Number " type="tel" tabindex="4" required>
+        </fieldset>
+        <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+        </fieldset>
+        <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank" title="Colorlib">Colorlib</a></p>
+    </form>
+</div>
+</body>
+</html>
