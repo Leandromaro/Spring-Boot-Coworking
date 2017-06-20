@@ -2,7 +2,6 @@ package hello.repository;
 
 import hello.entities.UserData;
 import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 /**

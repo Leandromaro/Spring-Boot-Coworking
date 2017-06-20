@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class GreetingController {
 
-
     @Autowired
     FormValidator formValidator;
     
