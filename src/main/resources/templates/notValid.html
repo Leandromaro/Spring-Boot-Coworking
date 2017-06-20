@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="../css/contactForm.css" type="text/css" rel="stylesheet"></link>
+</head>
+<body>
+
+
+<div class="container">
+    <div class="row msgWrapper">
+        <form id="contact" action="" method="get">
+
+        <div class="col-md-12">
+            <fieldset>
+                <h1><p th:text="'The following values are not ok, ' + ${name} + ' ' + ${lname} + '!'" /></h1>
+            </fieldset>
+        </div>
+        </form>
+
+    </div>
+</div>
+
+</body>
+</html>

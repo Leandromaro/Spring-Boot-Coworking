@@ -1,7 +1,6 @@
-package hello.Service;
+package hello.service;
 
 import com.mashape.unirest.http.HttpResponse;
-import com.mashape.unirest.http.JsonNode;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
 import org.springframework.stereotype.Service;
@@ -28,17 +27,5 @@ public class FormValidator {
         return "OK";
     }
 
-
-
-
-//    public UserData createBook(Book book) throws Exception {
-//        HttpResponse<Book> response = Unirest.post(URI_BOOK).header("accept", "application/json")
-//                .header("Content-Type", "application/json").body(book).asObject(Book.class);
-//        int status = response.getStatus();
-//        System.out.println("Status code: " + status);
-//        Book createdBook = response.getBody();
-//        return createdBook;
-//
-//    }
 
 }
