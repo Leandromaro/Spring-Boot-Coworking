@@ -3,8 +3,24 @@
 <head>
     <title>Getting Started: Serving Web Content</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="../css/contactForm.css" type="text/css" rel="stylesheet"></link>
 </head>
 <body>
-<p th:text="'Hello, ' + ${name} + ' ' + ${lname} + '!'" />
+
+
+<div class="container">
+    <div class="row msgWrapper">
+        <form id="contact" action="" method="get">
+
+        <div class="col-md-12">
+            <fieldset>
+                <h1><p th:text="'Hello, ' + ${name} + ' ' + ${lname} + '!'" /></h1>
+            </fieldset>
+        </div>
+        </form>
+
+    </div>
+</div>
+
 </body>
 </html>

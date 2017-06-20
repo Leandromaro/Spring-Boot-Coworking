@@ -142,3 +142,658 @@ fieldset {
 :-ms-input-placeholder {
   color: #888;
 }
+
+.ticketNumberInputPSE {
+	margin-bottom: 5px;
+	height: 40px;
+}
+
+#ticketNumberGroup > p {
+	margin-bottom: -8px;
+}
+.formCancellationTam {
+	display: block;
+	height: 40px;
+	padding: 4px 10px;
+	font-size: 16px;
+	font-family: "Latam-Sans-Regular",Trebuchet MS,Arial,sans-serif;
+	line-height: 1.42857143;
+	color: #6a6a6a;
+	background-image: none;
+	border: 1px solid #999;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-o-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-ms-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	-moz-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	-ms-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.myReadonly {
+	background-color: #ebebeb;
+	text-align: center;
+}
+#containerPSE h1 {
+	color:#1B0088;
+	margin-top: 20px;
+}
+#containerPSE h1 small {
+	font-size: large;
+}
+
+#containerPSE .cancellationTam-form {
+	width: 470px;
+	height: auto;
+	float: left;
+	margin-top: 40px;
+	padding: 50px;
+	padding-top: 30px;
+}
+
+#containerPSE .cnpj-form {
+	width: 470px;
+	height: 250px;
+	float: left;
+	margin-top: 60px;
+	padding: 50px;
+	padding-top: 30px;
+}
+
+#containerPSE .create-password-form {
+    width: 470px;
+    height: auto;
+    float: left;
+    margin-top: 60px;
+	padding: 30px 50px 50px 50px;
+}
+
+#containerPSE .change-password-form {
+    width: 470px;
+    height: auto;
+    float: left;
+    margin-top: 60px;
+    padding: 30px 50px 50px 50px;
+}
+
+#managePasswordForm .validation-box {
+	width: 368px;
+}
+
+#containerPSERegister h1 {
+	color:#1B0088;
+	margin-bottom: 40px;
+	margin-top:40px;
+}
+
+#containerPSERegister .actionContainer {
+	margin-top: 10px;
+}
+
+#containerPSERegister .checkContainer {
+    margin-top: 15px;
+}
+
+.formLegend {
+	color:#858585;
+	display: inline-block;
+	max-width: 100%;
+	margin-bottom: -10px;
+	font-size: 16px;
+	font-family: "Latam-Sans-Bold",Trebuchet MS,Arial,sans-serif;
+	border:none;
+}
+
+.confirmTyC {
+	float: left;
+}
+.actionButton {
+	float: right;
+}
+
+.spacer {
+	margin-bottom: 150px;
+}
+
+.msgWrapper {
+	margin-top: 80px;
+}
+
+.msgContainer {
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 20px;
+}
+
+.msgIconOk {
+	color: white;
+	background-color: #99CC33;
+	position: absolute;
+	z-index: 1;
+	margin-top: -22px;
+	margin-left: 35px;
+	line-height: 1.3;
+	font-size: 55px;
+}
+
+.msgIconFail {
+	color: white;
+	background-color: #2D34CE;
+	position: absolute;
+	z-index: 1;
+	margin-top: -22px;
+	margin-left: 35px;
+	line-height: 1.5;
+	font-size: 55px;
+}
+
+.modal-pse-tyc {
+	padding: 0px;
+	padding-right: 20px;
+}
+
+.title-pse-tyc{
+	margin-top: 20px;
+}
+
+.icon-pse-tyc{
+	margin-top: 2px;
+    color: white;
+    position: absolute;
+    left: 31px;
+    font-size: 46px;
+}
+
+.icon-container-pse-tyc{
+	background: #FFC800;
+    margin-left: 25px;
+    margin-top: 10px;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+}
+
+div[class="containerError errorDB alert alert-error"] {
+	display : block;
+}
+
+div[class="containerError errorForm alert alert-error"] {
+	display : block;
+}
+
+.containerError {
+	display : none;
+}
+
+textarea {
+	resize: none;
+}
+
+.alertWihtoutTitle {
+	font-size: 18px;
+	margin-top: 5px;
+}
+
+.ok-button-cont > .compra__ok-button-region > button.btn-green, .ok-button-cont > .checkin__btn-checkin-region > button.btn-green {
+    background-color: #ED1650 !important;
+    color: #ffffff !important;
+    transition: box-shadow 0.2s ease-in, background-color 0.2s ease-in, color 0.2s ease-in !important
+}
+.ok-button-cont button.btn-green:focus,
+.ok-button-cont button.btn-green:hover{
+    background: #F53859 !important;
+    border: 2px solid #F53859 !important;
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.4) !important
+}
+.ok-button-cont button.btn-green:active{
+    background: #F53859 !important
+}
+.first-level {
+    background: #ED1650;
+    color: #ffffff;
+    transition: box-shadow 0.2s ease-in, background-color 0.2s ease-in, color 0.2s ease-in;
+    border-radius: 3px
+}
+.first-level>[class*=icon-],
+.first-level>[class^=icon-] {
+    color: #ffffff
+}
+.first-level:focus,
+.first-level:hover {
+    background: #F53859;
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.4)
+}
+.first-level:active {
+    background: #F53859
+}
+.second-level {
+    background: #1B0088;
+    color: #ffffff;
+    transition: box-shadow 0.2s ease-in, background-color 0.2s ease-in, color 0.2s ease-in;
+    border-radius: 3px
+}
+.second-level>[class*=icon-],
+.second-level>[class^=icon-] {
+    color: #ffffff
+}
+.second-level:focus,
+.second-level:hover {
+    background: #2D34CE;
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.4)
+}
+.second-level:active {
+    background: #2D34CE
+}
+.third-level {
+    background: transparent;
+    color: #1B0088;
+    border: 1px solid #1B0088;
+    transition: box-shadow 0.2s ease-in, background-color 0.2s ease-in, color 0.2s ease-in;
+    border-radius: 3px
+}
+.third-level>[class*=icon-],
+.third-level>[class^=icon-] {
+    color: #1B0088
+}
+.third-level:focus,
+.third-level:hover {
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.4)
+}
+.third-level:active,
+.third-level:focus,
+.third-level:hover {
+    color: #ffffff;
+    background: #2D34CE;
+    border: 1px solid #2D34CE
+}
+.third-level:active>[class*=icon-],
+.third-level:active>[class^=icon-],
+.third-level:focus>[class*=icon-],
+.third-level:focus>[class^=icon-],
+.third-level:hover>[class*=icon-],
+.third-level:hover>[class^=icon-] {
+    color: #ffffff
+}
+.fourth-level {
+    background: transparent;
+    color: #1B0088
+}
+.fourth-level span {
+    text-decoration: underline
+}
+.fourth-level span[class*=icon-],
+.fourth-level span[class^=icon-] {
+    text-decoration: none;
+    color: #1B0088
+}
+.fourth-level,
+.fourth-level:active,
+.fourth-level:hover {
+    background: transparent;
+    color: #2D34CE
+}
+.fourth-level:active>[class*=icon-],
+.fourth-level:active>[class^=icon-],
+.fourth-level:hover>[class*=icon-],
+.fourth-level:hover>[class^=icon-],
+.fourth-level>[class*=icon-],
+.fourth-level>[class^=icon-] {
+    color: #2D34CE
+}
+.first-negative:focus,
+.fourth-negative:focus,
+.second-negative:focus,
+.third-negative:focus {
+    outline-color: #ffffff
+}
+a.first-level:focus,
+a.fourth-level:focus,
+a.second-level:focus,
+a.third-level:focus {
+    outline-offset: 0px
+}
+a.first-level,
+a.second-level,
+a.third-level {
+    text-decoration: none
+}
+a.first-level.active,
+a.first-level:active,
+a.first-level:hover,
+a.second-level.active,
+a.second-level:active,
+a.second-level:hover,
+a.third-level.active,
+a.third-level:active,
+a.third-level:hover {
+    color: #ffffff
+}
+a.first-level:focus,
+a.second-level:focus {
+    color: #ffffff
+}
+a.first-level:focus.active,
+a.first-level:focus:active,
+a.first-level:focus:hover,
+a.second-level:focus.active,
+a.second-level:focus:active,
+a.second-level:focus:hover {
+    color: #ffffff
+}
+a.fourth-level,
+button[type=submit].fourth-level,
+input[type=button].fourth-level,
+input[type=submit].fourth-level {
+    text-decoration: underline
+}
+.box-white a.first-level {
+    color: #ffffff
+}
+.box-white a.first-level:active,
+.box-white a.first-level:focus,
+.box-white a.first-level:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background: #00B5AD
+}
+.box-white a.second-level {
+    color: #ffffff
+}
+.box-white a.second-level:active,
+.box-white a.second-level:focus,
+.box-white a.second-level:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background: #2D34CE
+}
+.box-white a.third-level {
+    color: #1B0088
+}
+.box-white a.third-level:active,
+.box-white a.third-level:focus,
+.box-white a.third-level:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background: #2D34CE
+}
+.box-white a.fourth-level {
+    color: #1B0088;
+    background: transparent
+}
+html, body {
+	height: 100%;
+}
+
+body > #container {
+	min-height: 51%;
+	padding-bottom: 50px;
+}
+
+body > .footerCorporate {
+	display: table;
+	width: 100%;
+}
+
+.footerCorporate > .infoFooter {
+	background-color: #EDEDED;
+	display: table;
+	height: auto;
+	padding: 30px 0px;
+	width: 100%;
+}
+
+.footerCorporate > .infoFooter > .linksInfoFooter {
+	height: auto;
+	margin: 0px 197px;
+	padding: 0px;
+}
+
+.footerCorporate > .infoFooter > .linksInfoFooter > .elementInfoFooter {
+	display: inline-block;
+	padding: 0px 10px;
+	vertical-align: top;
+}
+
+.footerCorporate > .infoFooter > .linksInfoFooter > .elementInfoFooter > h3 {
+	color: #1B0088;
+	font-family: 'Latam-Sans-Regular',arial,sans-serif;
+	font-size: 20px;
+	line-height: 120%;
+	margin: 0px;
+	padding-bottom: 20px;
+}
+
+.footerCorporate > .infoFooter > .linksInfoFooter > .elementInfoFooter > ul {
+	list-style: none;
+	padding: 0px;
+}
+
+.footerCorporate > .infoFooter > .linksInfoFooter > .elementInfoFooter > ul > li {
+	border: 2px solid transparent;
+	color: #666666;
+	font-family: 'Latam-Sans-Regular',arial,sans-serif;
+	font-size: 14px;
+	line-height: 120%;
+	padding-bottom: 12px;
+}
+
+.footerCorporate > .infoFooter > .linksInfoFooter > .elementInfoFooter > ul > li > a {
+	text-decoration: none;
+}
+
+.footerCorporate > .infoFooter > .linksInfoFooter > .elementInfoFooter > ul > li > a:hover {
+	text-decoration: underline;
+}
+
+body > .footerCorporate > #footer-latam {
+	margin-top: 0px;
+}
+
+.ticketNumberInputPSE {
+	margin-bottom: 5px;
+	height: 40px;
+}
+
+#ticketNumberGroup > p {
+	margin-bottom: -8px;
+}
+.formCancellationTam {
+	display: block;
+	height: 40px;
+	padding: 4px 10px;
+	font-size: 16px;
+	font-family: "Latam-Sans-Regular",Trebuchet MS,Arial,sans-serif;
+	line-height: 1.42857143;
+	color: #6a6a6a;
+	background-image: none;
+	border: 1px solid #999;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-o-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-ms-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	-moz-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	-ms-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.myReadonly {
+	background-color: #ebebeb;
+	text-align: center;
+}
+#containerPSE h1 {
+	color:#1B0088;
+	margin-top: 20px;
+}
+#containerPSE h1 small {
+	font-size: large;
+}
+
+#containerPSE .cancellationTam-form {
+	width: 470px;
+	height: auto;
+	float: left;
+	margin-top: 40px;
+	padding: 50px;
+	padding-top: 30px;
+}
+
+#containerPSE .cnpj-form {
+	width: 470px;
+	height: 250px;
+	float: left;
+	margin-top: 60px;
+	padding: 50px;
+	padding-top: 30px;
+}
+
+#containerPSE .create-password-form {
+    width: 470px;
+    height: auto;
+    float: left;
+    margin-top: 60px;
+	padding: 30px 50px 50px 50px;
+}
+
+#containerPSE .change-password-form {
+    width: 470px;
+    height: auto;
+    float: left;
+    margin-top: 60px;
+    padding: 30px 50px 50px 50px;
+}
+
+#managePasswordForm .validation-box {
+	width: 368px;
+}
+
+#containerPSERegister h1 {
+	color:#1B0088;
+	margin-bottom: 40px;
+	margin-top:40px;
+}
+
+#containerPSERegister .actionContainer {
+	margin-top: 10px;
+}
+
+#containerPSERegister .checkContainer {
+    margin-top: 15px;
+}
+
+.formLegend {
+	color:#858585;
+	display: inline-block;
+	max-width: 100%;
+	margin-bottom: -10px;
+	font-size: 16px;
+	font-family: "Latam-Sans-Bold",Trebuchet MS,Arial,sans-serif;
+	border:none;
+}
+
+.confirmTyC {
+	float: left;
+}
+.actionButton {
+	float: right;
+}
+
+.spacer {
+	margin-bottom: 150px;
+}
+
+.msgWrapper {
+	margin-top: 80px;
+}
+
+.msgContainer {
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 20px;
+}
+
+.msgIconOk {
+	color: white;
+	background-color: #99CC33;
+	position: absolute;
+	z-index: 1;
+	margin-top: -22px;
+	margin-left: 35px;
+	line-height: 1.3;
+	font-size: 55px;
+}
+
+.msgIconFail {
+	color: white;
+	background-color: #2D34CE;
+	position: absolute;
+	z-index: 1;
+	margin-top: -22px;
+	margin-left: 35px;
+	line-height: 1.5;
+	font-size: 55px;
+}
+
+.modal-pse-tyc {
+	padding: 0px;
+	padding-right: 20px;
+}
+
+.title-pse-tyc{
+	margin-top: 20px;
+}
+
+.icon-pse-tyc{
+	margin-top: 2px;
+    color: white;
+    position: absolute;
+    left: 31px;
+    font-size: 46px;
+}
+
+.icon-container-pse-tyc{
+	background: #FFC800;
+    margin-left: 25px;
+    margin-top: 10px;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+}
+
+div[class="containerError errorDB alert alert-error"] {
+	display : block;
+}
+
+div[class="containerError errorForm alert alert-error"] {
+	display : block;
+}
+
+.containerError {
+	display : none;
+}
+
+textarea {
+	resize: none;
+}
+
+.alertWihtoutTitle {
+	font-size: 18px;
+	margin-top: 5px;
+}
+
+
