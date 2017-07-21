@@ -1,4 +1,4 @@
-package hello.service.serviceInterface;
+package hello.service.interfaces;
 
 import hello.entities.UserData;
 

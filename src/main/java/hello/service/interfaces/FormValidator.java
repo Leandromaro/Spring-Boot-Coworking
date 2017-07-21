@@ -1,10 +1,11 @@
-package hello.service.serviceInterface;
+package hello.service.interfaces;
 
 import com.mashape.unirest.http.exceptions.UnirestException;
+import hello.entities.UserData;
 
 /**
  * Created by leandromaro on 20/6/17.
  */
 public interface FormValidator {
-    String validate() throws UnirestException;
+    String validate(UserData userData) throws UnirestException;
 }

@@ -2,8 +2,8 @@ package hello.controllers;
 
 import com.mashape.unirest.http.exceptions.UnirestException;
 import hello.entities.UserData;
-import hello.service.serviceImplementation.FormValidator;
-import hello.service.serviceImplementation.UserService;
+import hello.service.implementation.FormValidator;
+import hello.service.implementation.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-public class GreetingController {
+public class ContactFormController {
 
     @Autowired
     FormValidator formValidator;
@@ -28,22 +28,27 @@ public class GreetingController {
                            Model model) {
         String validationAnswer = "";
         String view = "notValid";
+
+        int identificationNumber = Integer.parseInt(dni);
+        UserData userData = new UserData(name, lname, email, identificationNumber);
+
         try {
-            validationAnswer = formValidator.validate();
-        } catch (UnirestException e) {
+            validationAnswer = formValidator.validate(userData);
+            model.addAttribute("name", name);
+            model.addAttribute("lname", lname);
+            model.addAttribute("dni", dni);
+            model.addAttribute("email", email);
+            userService.saveUser(userData);
+            view = "greeting";
+        } catch (IllegalArgumentException e) {
             e.printStackTrace();
         }
 
-        model.addAttribute("name", name);
-        model.addAttribute("lname", lname);
-        model.addAttribute("dni", dni);
-        model.addAttribute("email", email);
+
 
         if (validationAnswer.equals("OK")) {
-            int identificationNumber = Integer.parseInt(dni);
-            UserData userData = new UserData(name, lname, email, identificationNumber);
-            userService.saveUser(userData);
-            view = "greeting";
+
+
         }
         return view;
 
