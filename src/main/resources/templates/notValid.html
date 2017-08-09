@@ -10,15 +10,25 @@
 
 <div class="container">
     <div class="row msgWrapper">
-        <form id="contact" action="" method="get">
-
+        <form id="contact" action="/index.html" method="get" th:object="${error}">
+        <h5>The Following values are not correct, please fill them again</h5>
         <div class="col-md-12">
             <fieldset>
-                <h1><p th:text="'The following values are not ok, ' + ${name} + ' ' + ${lname} + '!'" /></h1>
+                <div th:unless="${ #lists.isEmpty(error) }">
+                    <dl th:each="todo : ${error}">
+                        <dt class="todoHeadline">
+                            <h4><span th:text="${todo}"></span></h4>
+                        </dt>
+                    </dl>
+                </div>
+                <div th:if="${ #lists.isEmpty(error) }">
+                </div>
+            </fieldset>
+            <fieldset>
+                <button type="submit">Go Back</button>
             </fieldset>
         </div>
         </form>
-
     </div>
 </div>
 

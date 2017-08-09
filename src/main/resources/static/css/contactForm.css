@@ -58,6 +58,13 @@ body {
   font-weight: 400;
 }
 
+#contact h5 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+}
+
 fieldset {
   border: medium none !important;
   margin: 0 0 10px;
@@ -67,6 +74,7 @@ fieldset {
 }
 
 #contact input[type="text"],
+#contact input[type="number"],
 #contact input[type="email"],
 #contact input[type="tel"],
 #contact input[type="url"],

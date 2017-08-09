@@ -1,11 +1,13 @@
 package hello.service.interfaces;
 
-import com.mashape.unirest.http.exceptions.UnirestException;
 import hello.entities.UserData;
+import hello.service.Exceptions.InvalidInputException;
+
+import java.util.ArrayList;
 
 /**
  * Created by leandromaro on 20/6/17.
  */
 public interface FormValidator {
-    String validate(UserData userData) throws UnirestException;
+    ArrayList<String> validate(String name, String lastName, String email, String dni) throws InvalidInputException;
 }
