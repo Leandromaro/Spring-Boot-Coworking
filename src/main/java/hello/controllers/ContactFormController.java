@@ -4,6 +4,7 @@ import hello.entities.UserData;
 import hello.service.implementation.FormValidator;
 import hello.service.implementation.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 @Controller
 public class ContactFormController {
@@ -30,7 +32,7 @@ public class ContactFormController {
                                  Model model) {
         ModelAndView mav = new ModelAndView("notValid");
 
-        ArrayList<String> wrongFields = formValidator.validate(name, lname, email, dni);
+        List<String> wrongFields = formValidator.validate(name, lname, email, dni);
 
         if(wrongFields.isEmpty()){
             model.addAttribute("name", name);

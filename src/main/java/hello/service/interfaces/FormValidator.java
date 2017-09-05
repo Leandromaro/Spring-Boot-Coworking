@@ -1,13 +1,12 @@
 package hello.service.interfaces;
 
-import hello.entities.UserData;
 import hello.service.Exceptions.InvalidInputException;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by leandromaro on 20/6/17.
  */
 public interface FormValidator {
-    ArrayList<String> validate(String name, String lastName, String email, String dni) throws InvalidInputException;
+    List<String> validate(String name, String lastName, String email, String dni) throws InvalidInputException;
 }
